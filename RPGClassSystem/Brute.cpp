@@ -66,7 +66,7 @@ void Brute::levelUp(int level)
 
 	if (*lvl <= 55)
 	{
-		*HP += (*lvl * 10);
+		*HP += (*lvl * 8);
 		*attk += (*lvl * 5);
 		*spd += (*lvl * 4);
 		*stam += (*lvl * 4);

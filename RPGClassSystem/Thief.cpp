@@ -66,15 +66,15 @@ void Thief::levelUp(int level)
 
 	if (*lvl <= 55)
 	{
-		*HP += (*lvl * 10);
+		*HP += (*lvl * 5);
 		*attk += (*lvl * 5);
-		*spd += (*lvl * 4);
+		*spd += (*lvl * 6);
 		*stam += (*lvl * 4);
-		*mana = (*lvl * 2);
+		*mana = (*lvl * 3);
 
-		if (*lvl > 1 && *lvl <= 50)
+		if (*lvl > 1 && *lvl <= 55)
 		{
-			if (*lvl % 10 == 0)
+			if (*lvl % 11 == 0)
 			{
 				*cloak += 1; //every 5 levels add a bar of cloak and cap at 5 bars at 25  **may adjust to 50**
 			}
@@ -82,20 +82,20 @@ void Thief::levelUp(int level)
 			{
 				int remainder = 0;
 
-				if (*lvl % 10 != 0 && *lvl <= 50)
+				if (*lvl % 11 != 0 && *lvl <= 55)
 				{
-					remainder = *lvl % 10;
+					remainder = *lvl % 11;
 
 					int stored = *lvl - remainder;
 
-					if (stored % 10 == 0)
+					if (stored % 11 == 0)
 					{
-						*cloak = (stored / 10) + 1;
+						*cloak = (stored / 11) + 1;
 					}
 				}
 			}
 		}
-		else if (*lvl >= 50)
+		else if (*lvl >= 55)
 		{
 			*cloak = 5;
 		}
