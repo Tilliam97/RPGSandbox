@@ -1,0 +1,62 @@
+# Ignore build and binary files
+Binaries/
+Build/
+DerivedDataCache/
+Intermediate/
+Saved/
+.vscode/
+.vs/
+*.VC.db
+*.VC.VC.opendb
+
+# Ignore config auto-backups
+*.log
+*.sdf
+*.opensdf
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignore Unreal-generated project files (optional if rebuilding regularly)
+*.xcodeproj
+*.xcworkspace
+*.xcconfig
+*.idea/
+
+# Ignore compiled assets
+*.pdb
+*.obj
+*.exe
+*.dll
+*.lib
+*.app
+*.dylib
+*.ipa
+
+# Ignore crash reports and backup files
+*.tmp
+*.bak
+*.old
+*.orig
+
+# Ignore macOS and Linux system files
+.DS_Store
+*.swp
+
+# Optional: ignore specific platforms or generated folders
+*.aps
+*.ncb
+*.idb
+
+# Ignore Unreal Plugins and FeaturePacks not tracked manually
+Plugins/*/Binaries/
+Plugins/*/Intermediate/
+FeaturePacks/
+
+# Ignore Unreal-generated project files (keep only source)
+*.sln
+*.uprojectsavetmp
+*.uasset
+*.umap
+
